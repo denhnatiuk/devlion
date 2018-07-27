@@ -1,0 +1,28 @@
+$grid-cols:12;
+$grid-gutter:15px;
+$brakepoints:(
+  xs:'screen and (max-width:575px)',
+  sm:'screen and (min-width:576px)',
+  md:'screen and (min-width:768px)',
+  lg:'screen and (min-width:992px)',
+  xl:'screen and (min-width:1200px)',
+  print:'print'
+);
+@each $brakepoint,$layout in $brakepoints{
+  @for $i from 1 through $grid-cols {
+    @media #{$layout} {
+      .col-#{$brakepoint}-#{$i} {
+        position: relative;
+        box-sizing: border-box;
+        width: 100% / $grid-cols * $i;
+        float: left;
+        padding:$grid-gutter;
+      }
+    }
+  }
+}
+.container{
+  box-sizing: border-box;
+  max-width:100%;
+  padding:15px;
+}

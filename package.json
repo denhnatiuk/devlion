@@ -1,0 +1,24 @@
+{
+  "name": "devlion",
+  "version": "1.0.0",
+  "description": "test task devlion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Den Hnatiuk",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "browser-sync": "^2.24.6",
+    "cssnano": "^4.0.3",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "minimatch": "^3.0.4",
+    "wiredep": "^4.0.0"
+  }
+}

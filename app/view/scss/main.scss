@@ -1,0 +1,38 @@
+@import "ux";
+@import "colors";
+@import "grid";
+@import "typography";
+@import "styles"; // for all screens;
+
+
+// brakepoints
+
+@media screen and (max-width:575px) {
+  @import "xs";
+}
+@media screen and (min-width:576px) {
+  @import "sm";
+}
+@media screen and (min-width:768px) {
+  @import "md";
+}
+@media screen and (min-width:992px) {
+  @import "lg";
+}
+@media screen and (min-width:1200px) {
+  @import "xl";
+}
+
+// !not available yet
+// $brakepoints:(
+//   xs:'screen and (max-width:575px)',
+//   sm:'screen and (min-width:576px)',
+//   md:'screen and (min-width:768px)',
+//   lg:'screen and (min-width:992px)',
+//   xl:'screen and (min-width:1200px)',
+//   print:'print'
+// );
+//
+// @each $brakepoint,$layout in $brakepoints{
+//   @media #{$layout} {@import "#{$brakepoint}"}
+// }

@@ -1,0 +1,67 @@
+.slider{
+  padding:15px;
+  margin:0;
+  position: relative;
+  figure{
+    position:relative;
+    img{
+     margin:0 auto;
+    }
+    figcaption{
+      position: absolute;
+      bottom:15px;
+      width:100%;
+    }
+  }
+  .slick-arrow{
+    width:1rem;
+    height:1rem;
+    z-index:10;
+    transform: rotate(45deg);
+  }
+  .slick-track{margin:-30px;}
+  .slick-dots li{position: absolute; top:-15px; opacity:0;height: 0;}
+}
+.horizontal{
+  .slick-prev{
+    position: absolute;
+    top:50%;
+    margin-top: -1rem;
+    left:0;
+    bottom:auto;
+  }
+  .slick-next{
+    position: absolute;
+    top:50%;
+    margin-top: -1rem;
+    right:0;
+    left:auto;
+    bottom:auto;
+  }
+}
+.vertical{
+  figure{
+    figcaption{
+      display: none;
+    }
+    &:hover figcaption{
+      display: block;
+    }
+  }
+  .slick-prev{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -1rem;
+    transform: rotate(135deg);
+  }
+  .slick-next{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -1rem;
+    top:auto;
+    right:auto;
+    transform: rotate(135deg);
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "devlion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Den Hnatiuk"
+  ],
+  "license": "SEE LICENSE IN license.md",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/view/lib",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

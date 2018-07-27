@@ -1,0 +1,17 @@
+$brand:#000;
+.slick-arrow{
+  color:transparent;
+  background-color: transparent;
+  &.slick-prev{
+    border-top:2px solid transparent;
+    border-right:2px solid transparent;
+    border-bottom:2px solid $brand;
+    border-left:2px solid $brand;
+  }
+  &.slick-next{
+    border-top:2px solid $brand;
+    border-right:2px solid $brand;
+    border-bottom:2px solid transparent;
+    border-left:2px solid transparent;
+  }
+}
